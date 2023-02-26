@@ -11,6 +11,8 @@
   body {
     background-color: var(--secondary-color);
     font-family: "Cabin", sans-serif;
+    max-width: 1400px;
+    margin: 0 auto
   }
   
   h1,
@@ -141,17 +143,16 @@
   
   /*Hero header*/
   .hero {
-    background-image: url(/images/hero-img.jpg);
-    background-position: center;
+    background-image:  linear-gradient(
+      rgba(39, 32, 68, 0.6),
+      rgba(39, 32, 68, 0.6)
+    ), 
+      url(/images/hero-img.jpg);
     background-repeat: no-repeat;
-    width: 100%;
-    height: 80vh;
     background-size: cover;
     color: var(--secondary-color);
     text-align: center;
-    padding-top: 15rem;
-    margin-bottom: 5rem;
-    opacity: 0.5;
+    padding: 200px 0;
   }
   
   .hero h1,
@@ -336,22 +337,25 @@
 
   
   /*Media queries*/
-  @media (max-width: 980px) {
+  @media (min-width: 600px) {
+    .hero h1,
+    .hero h2 {
+      font-size: 4rem;
+      line-height: 4.5rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
     .hero h1,
     .hero h2 {
       font-size: 2rem;
-      line-height: 1.5rem;
+      line-height: 2.5rem;
     }
     h1,
     h2 {
       text-align: center;
     }
-    .job > h4 {
-      font-size: 20px;
-    }
-    .job > h5 {
-      font-size: 16px;
-    }
+    
     .profile-img {
       margin: 0;
       padding: 0;
@@ -384,10 +388,7 @@
     .about-box {
       text-align: center;
     }
-    .intro {
-      margin: 1rem auto;
-    }
-
+    
     .skills1 {
       margin-top: 1rem;
     }
@@ -403,6 +404,16 @@
     }
     .areas-element {
       margin: 1.5rem auto;
+    }
+  }
+  
+  @media (max-width: 990px) {
+    .photo-container {
+      text-align: center;
+    }
+    .areas-container {
+      flex-direction: column;
+      flex-wrap: wrap;
     }
   }
   
