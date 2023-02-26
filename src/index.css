@@ -392,7 +392,9 @@
     .skills1 {
       margin-top: 1rem;
     }
-    
+    .intro {
+      margin: 1rem auto;
+    }
     .portfolio-text-box {
       margin-bottom: 1rem;
     }
@@ -403,7 +405,11 @@
       margin: 5rem 3rem;
     }
     .areas-element {
-      margin: 1.5rem auto;
+      text-align: left;
+    }
+    
+    .areas-element li {
+      text-align: left;
     }
   }
   
