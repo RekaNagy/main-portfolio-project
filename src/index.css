@@ -407,9 +407,11 @@
     .areas-element {
       text-align: left;
     }
-    
     .areas-element li {
       text-align: left;
+    }
+    .area {
+      font-size: 1.3rem;
     }
   }
   
